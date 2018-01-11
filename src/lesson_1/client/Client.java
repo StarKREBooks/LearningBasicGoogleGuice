@@ -19,6 +19,7 @@ public final class Client {
 
     public static void main(String[] args) {
         final int HERO_ARG = 0;
+        //bad solution as local clazz...
         final class BonusSupplierModule extends AbstractModule{
             @Override
             protected void configure() {
