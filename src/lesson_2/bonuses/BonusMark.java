@@ -1,4 +1,4 @@
-package lesson_1.bonuses;
+package lesson_2.bonuses;
 
 import org.jetbrains.annotations.Contract;
 

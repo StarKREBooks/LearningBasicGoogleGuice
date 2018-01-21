@@ -1,6 +1,6 @@
-package lesson_1.interfaces;
+package lesson_2.interfaces;
 
-public class Colors {
+public final class Colors {
     public static final String ANSI_WHITE = "\u001B[0m";
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_PURPLE = "\u001B[35m";

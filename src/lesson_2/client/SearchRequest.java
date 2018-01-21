@@ -1,4 +1,4 @@
-package lesson_1.client;
+package lesson_2.client;
 
 import org.jetbrains.annotations.Contract;
 
@@ -9,7 +9,7 @@ public final class SearchRequest {
         return hero;
     }
 
-    public final void setHero(String hero) {
+    final void setHero(final String hero) {
         this.hero = hero;
     }
 

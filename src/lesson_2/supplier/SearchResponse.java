@@ -1,9 +1,9 @@
-package lesson_1.supplier;
+package lesson_2.supplier;
 
-import lesson_1.bonuses.BonusMark;
+import lesson_2.bonuses.BonusMark;
 import org.jetbrains.annotations.Contract;
 
-import static lesson_1.interfaces.Colors.*;
+import static lesson_2.interfaces.Colors.*;
 
 public final class SearchResponse{
     private final String name;
@@ -11,7 +11,7 @@ public final class SearchResponse{
     private final String hero;
     private final BonusMark bonusMark;
 
-    SearchResponse(final String name, final int cost, final String hero, BonusMark bonusMark) {
+    public SearchResponse(final String name, final int cost, final String hero, BonusMark bonusMark) {
         this.name = name;
         this.cost = cost;
         this.hero = hero;
@@ -19,12 +19,12 @@ public final class SearchResponse{
     }
 
     @Contract(pure = true)
-    public String getHero() {
+    public final String getHero() {
         return hero;
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return "Bonus name: " + ANSI_BLUE + name + ANSI_WHITE + " cost: " + ANSI_GREEN + cost + " " + ANSI_PURPLE
                 + bonusMark + ANSI_WHITE;
     }
